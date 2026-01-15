@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AfroCloud Technologies | eLearning That Works</title>
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --secondary: #1aa6a6;
+      --dark: #1f2933;
+      --light: #f7f9fc;
+      --gray: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: #ffffff;
+    }
+    a { text-decoration: none; }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.3rem;
+    }
+    .btn-primary { background: #fff; color: var(--primary); }
+    .btn-secondary { border: 2px solid #fff; color: #fff; }
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .card h3 { margin-top: 0; }
+    .center { text-align: center; }
+    .cta-band {
+      background: var(--light);
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .tech-list span {
+      display: inline-block;
+      background: var(--light);
+      padding: 0.6rem 1rem;
+      margin: 0.4rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: var(--dark);
+      color: #fff;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+
+    /* Flip Cards */
+    .flip-card {
+      perspective: 1200px;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+    .flip-card-front {
+      background: white;
+    }
+    .flip-card-back {
+      background: #020617;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    .flip-card-back ul {
+      padding-left: 18px;
+    }
+
+    footer p { margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AfroCloud Technologies</h1>
+  <p><strong>eLearning that works - in real jobs, not just in theory.</strong><br />
+  We design practical, engaging eLearning that helps organisations build real capability. Our focus is simple: learning what people actually use, apply, and remember.</p>
+  <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+  <a href="#contact" class="btn btn-secondary">Talk to an eLearning Expert</a>
+</header>
+
+<section>
+  <h2>What Makes AfroCloud Different</h2>
+<p>We don’t just create courses; we design learning experiences that drive adoption and performance.</p>
+  <div class="grid">
+    <div class="card"><b>Outcome-focused: Designed for on-the-job application.</b> <br>We bridge the gap between "knowing" and "doing." By focusing on measurable performance outcomes, our eLearning solutions ensure that every minute spent training translates directly into increased productivity and workplace excellence.</div>
+    <div class="card"><b>Learner-centred: Inclusive, accessible, mobile-first.</b> <br> Education should adapt to the learner, not the other way around. Our platforms are built from the ground up to be fully inclusive and WCAG-compliant, ensuring every user has a seamless, high-quality learning experience on the go.</div>
+    <div class="card"><b>Scalable: Built for teams, regions, and growth.</b> <br> Our infrastructure is designed to evolve alongside your organization. Whether you are launching a pilot program for a single team or deploying a global initiative across multiple regions, our solutions provide the stability and localized support needed to power your long-term growth.</div>
+    <div class="card"><b>End-to-end: From design to LMS launch and optimisation.</b> <br> We don’t just deliver a file and walk away; we architect the instructional design, oversee the platform launch, and provide ongoing optimisation to ensure your learning ecosystem remains effective and up-to-date.</div>
+  </div>
+  <div class="center" style="margin-top:2rem;">
+    <a href="#process" class="btn btn-primary">How We Work</a>
+  </div>
+</section>
+
+<section class="alt">
+  <h2>eLearning Solutions</h2>
+  <div class="grid">
+<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Digital Learning Content</h3>
+          <p>Transform classroom and legacy materials into clear, engaging digital learning.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>Content Digitisation</li>
+            <li>Instructional Design</li>
+            <li>Video & Animation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Microlearning & Performance Support</h3>
+          <p>Short, focused learning that fits into the flow of work.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>Microlearning</li>
+            <li>Performance Support Tools</li>
+            <li>Blended Learning Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Interactive & Experiential Learning</h3>
+          <p>Engage learners through practice, decision-making, and interaction.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>Scenario-Based Learning</li>
+            <li>Gamification & Badges</li>
+            <li>Social & Collaborative Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Assessment, Analytics & Adaptation</h3>
+          <p>Measure learning, identify gaps, and prove impact.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>Assessments & Knowledge Checks</li>
+            <li>Learning Analytics & Reporting</li>
+            <li>Adaptive Learning Paths</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Immersive & Advanced Learning</h3>
+          <p>Safe, realistic practice for confidence before application.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>AR & VR Simulations</li>
+            <li>High-risk & Complex Skills Practice</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>LMS Integration & Enablement</h3>
+          <p>Well-structured platforms that learners actually use.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>What this includes</h4>
+          <ul>
+            <li>LMS Setup & Launch</li>
+            <li>Learner Adoption Support</li>
+            <li>Ongoing LMS Optimisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</div>
+</section>
+
+
+<section id="process">
+  <h2>How We Design Learning</h2>
+  <p class="center">We combine ADDIE, Agile methods, and Adult Learning Principles.</p>
+  <p class="center"><strong>Analyze → Design → Develop → Implement → Evaluate</strong></p>
+
+<ul>
+            <li><b>Analyze:</b> We identify your performance gaps and learner needs to ensure the solution targets the right business problems.</li>
+            <li><b>Design:</b> We map out the learning journey, creating blueprints and storyboards that prioritize engagement and instructional flow.</li>
+            <li><b>Develop:</b> Our team builds the high-fidelity content, transforming designs into interactive, mobile-ready, and accessible digital assets.</li>
+<li><b>Implement:</b> We handle the technical heavy lifting, from SCORM/xAPI integration to a seamless rollout across your LMS.</li>
+<li><b>Evaluate:</b> We analyze learner data and feedback to measure impact and continuously optimize the content for better results.</li>
+          </ul>
+
+<p>This ensures learning is:</p>
+<ul>
+  
+    <li>Purpose-driven</li>
+    <li>Engaging and easy to follow</li>
+    <li>Continuously improved based on results</li>
+  
+  <div class="center" style="margin-top:2rem;">
+    <a href="#design" class="btn btn-primary">Our Design Approach</a>
+  </div>
+</section>
+
+<section>
+  <h2>Technology That Scales</h2>
+<p align = "center">We work with reliable, widely adopted learning technologies.</p>
+  <div class="center tech-list">
+    <p><strong>Platforms</strong></p>
+    <span>Moodle</span><span>LearnDash</span><span>TalentLMS</span>
+    <p><strong>Standards</strong></p>
+    <span>SCORM</span><span>xAPI</span>
+    <p><strong>Support</strong></p>
+    <span>Hosting</span><span>Analytics</span><span>LMS Support</span>
+  </div>
+</section>
+
+<section>
+  <h2>Built for Global & Local Contexts</h2>
+<p>Our eLearning is designed to work across regions and cultures.</p>
+  <div class="grid">
+    <div class="card">Localised language and examples</div>
+    <div class="card">Context-aware scenarios</div>
+    <div class="card">Modular, reusable content</div>
+    <div class="card">Scalable delivery for growing organisations</div>
+<p> Or we can have flags of countries and regions we have worked with move across/ stay on the screen</p>
+  </div>
+</section>
+
+
+
+<section id="portfolio">
+  <h2>See Learning in Action</h2>
+  <p class="center">Course screens, microlearning modules, animations, dashboards, and immersive learning visuals.</p>
+  <div class="center" style="margin-top:2rem;">
+    <a href="#portfolio" class="btn btn-primary">View Our Portfolio</a>
+    <a href="#contact" class="btn btn-secondary">Start a Conversation</a>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <h2>AfroCloud Technologies</h2>
+  <p>Your one-stop eLearning solutions provider</p>
+  <a href="#contact" class="btn btn-primary">Let’s Build Your eLearning</a>
+  <a href="#contact" class="btn btn-secondary">Contact Us</a>
+</section>
+
+<footer>
+  <p>&copy; AfroCloud Technologies</p>
+  <p>eLearning that people use, apply, and remember.</p>
+</footer>
+
+</body>
+</html>
