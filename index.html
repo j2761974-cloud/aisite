@@ -55,6 +55,23 @@
       margin-bottom: 2rem;
       font-size: 2rem;
     }
+    .image-text {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+.image-text img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional */
+}
+
+.text-content {
+  flex: 1;
+}
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -148,7 +165,7 @@
   <a href="#contact" class="btn btn-secondary">Talk to an eLearning Expert</a>
 </header>
 
-<section>
+<section class="image-text">
   <p><strong>eLearning that works - in real jobs, not just in theory.</strong><br />
   We design practical, engaging eLearning that helps organisations build real capability. Our focus is simple: learning what people actually use, apply, and remember.</p>
   <h2>What makes our learning different:</h2>
